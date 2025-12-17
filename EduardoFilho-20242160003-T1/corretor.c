@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 
-//renomeie o arquivo do include abaixo para PrimeiroUltimoNomeMATRICULA.h
-#include "EduardoFilho-20242160003.h"
+
+#include "trabalho1.h"
 
 void testQ1();
 void testQ2();
