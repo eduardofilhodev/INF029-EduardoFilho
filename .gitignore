@@ -1,3 +1,20 @@
 *.exe
 *.o
 *.obj
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Build folders
+build/
+dist/
+
+# Editor/system files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini

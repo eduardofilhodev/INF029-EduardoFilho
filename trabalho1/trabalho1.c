@@ -376,40 +376,15 @@ int q4(char *strTexto, char *strBusca, int posicoes[30]) {
 
 int q5(int num)
 {
-    int i=0;
-    int numeros[100];
-    for(i=0;i<100;i++){
-        numeros[i]=-1;
-    }
-    i=0;
-    int casas_decimais=0;
+    int invertido = 0;
 
-    while(num>0){
-        numeros[i]=num%10;
-        num=num/10;   
-        casas_decimais++;
-        i++;
+    while (num > 0) {
+        invertido = (invertido * 10) + (num % 10);
+        num = num / 10;
     }
-    // inverte
-    int num_retorno=0;
-    int mult=10;
 
-    i=casas_decimais-1;//0,1,2 //5|2|1
-    
-    while(i>=0){
-        if(i==casas_decimais-1){
-            num_retorno+=numeros[i];
-            i--;
-        }
-        num_retorno+=numeros[i]*mult;
-        mult*=10;
-        i--;
-    }
-    num=num_retorno;
-
-    return num;
+    return invertido;
 }
-
 /*
  Q6 = ocorrùncia de um nùmero em outro
  @objetivo
